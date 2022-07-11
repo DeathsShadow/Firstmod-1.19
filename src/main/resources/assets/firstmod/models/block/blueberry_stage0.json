@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/crop",
   "textures": {
     "crop": "firstmod:block/blueberry_stage0"
   }
