@@ -1,4 +1,4 @@
-package com.deathsshadow.firstmod
+package com.deathsshadow.firstmod;
 
 import com.deathsshadow.firstmod.block.ModBlocks;
 import com.deathsshadow.firstmod.item.ModItems;
