@@ -1,4 +1,4 @@
-package com.deathsshadow.firstmod.event;
+package com.deathsshadow.firstmod.event
 
 import com.deathsshadow.firstmod.FirstMod;
 import com.deathsshadow.firstmod.item.ModItems;

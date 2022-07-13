@@ -1,4 +1,4 @@
-package com.deathsshadow.firstmod.villager;
+package com.deathsshadow.firstmod.villager
 
 import com.deathsshadow.firstmod.FirstMod;
 import com.deathsshadow.firstmod.block.ModBlocks;
