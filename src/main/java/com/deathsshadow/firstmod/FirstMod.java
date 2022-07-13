@@ -2,6 +2,7 @@ package com.deathsshadow.firstmod;
 
 import com.deathsshadow.firstmod.block.ModBlocks;
 import com.deathsshadow.firstmod.item.ModItems;
+import com.deathsshadow.firstmod.villager.ModVillagers;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -26,13 +27,17 @@ public class FirstMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModVillagers.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
